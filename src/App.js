@@ -5,9 +5,11 @@ import { useState } from 'react';
 const App=()=>{
 
 const [value, setValue]= useState();
+const [value2, setValue2]= useState();
 return<div>
-  <input type='text'onChange={e=>setValue(e.target.value*1.8+32)}/>
-  {value}
+  <input type='text'onChange={e=>setValue(e.target.value)}/>  
+  <input type='text'onChange={e=>setValue2(e.target.value)}/>
+  {value*value2}
 </div>
 
 }
