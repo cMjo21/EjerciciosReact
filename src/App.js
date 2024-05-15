@@ -6,7 +6,7 @@ const App=()=>{
 
 const [value, setValue]= useState();
 return<div>
-  <input type='text'onChange={e=>setValue(e.target.value*1,0)}/>
+  <input type='text'onChange={e=>setValue(e.target.value*1.8+32)}/>
   {value}
 </div>
 
